@@ -331,10 +331,10 @@ color: gray;
 }
  
 footer{
-  background: linear-gradient(to right, var(--colorfooter), var(--colordegradado));
+background: linear-gradient(to right, var(--colorfooter), var(--colordegradado));
  margin-top: auto;
  padding-top: 0;
-  min-height: 80px;
+ min-height: 80px;
   
 }
 .footer-link {
@@ -444,7 +444,7 @@ margin:auto;
 
     .my-pago{
   text-align: center;
-  margin-left: 0.5cm;
+  margin-left: 0.7cm;
     
     }
   }
@@ -454,6 +454,8 @@ margin:auto;
     .my-class{
   text-align: center;
   margin-left: 0.3cm;
+ 
+  
     
     }
   }
@@ -471,9 +473,10 @@ margin:auto;
   @media screen and (max-width:700px){
 
     #borrarButton{
-  margin:0.8cm;
+  /*margin:0.8cm;*/
   margin-bottom: 0.1cm;
   margin-top: 0.5cm;
+  margin-left: 1.3cm;
   
     }
   }
@@ -482,9 +485,73 @@ margin:auto;
 
     #resumenButton{
     
-    margin:0.8cm;
+    /*margin:0.8cm;*/
     margin-top: 0.1cm;
+    margin-left: 1.3cm;
    
     
+    }
+  }
+
+  @media screen and (max-width:700px){
+
+    #inputCantidad{
+    width: 2cm;
+    margin-right: 0.8;
+    
+   
+    
+    }
+  }
+  @media screen and (max-width:700px){
+
+    #inputState{
+    width: 2cm;
+  margin-left: 0;
+    margin-right:2cm;
+  
+    }
+  }
+
+  @media screen and (max-width:700px){
+
+    #inputNombre2{
+    width: 2cm;
+  margin-left: 0;
+    margin-right:2cm;
+    margin-bottom: 0;
+  
+    }
+  }
+
+  @media screen and (max-width:700px){
+
+    #inputApellido2{
+    width: 2cm;
+  margin-left: 0;
+    margin-right:2cm;
+    margin-top: 0;
+    
+  
+    }
+  }
+
+  @media screen and (max-width:700px){
+
+    #inputEmail1{
+    width: 2cm;
+    margin-left: 1cm;
+  
+  
+    }
+  }
+
+  @media screen and (max-width:700px){
+
+    #inputTotalAPagar{
+    width: 2cm;
+    margin-left: 0.7cm;
+  
+  
     }
   }
