@@ -24,7 +24,13 @@
     
   }
   
-  
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
 
   
   html{
@@ -202,39 +208,50 @@ margin-top: -30px;
   }
   #inputNombre2 {
     width: 79%;
-    margin-left: 2cm;
-   
+    /*margin-left: 2cm;*/
+   margin: auto;
+   margin-right: 0.1cm;
   }
 
   #inputApellido2 {
     width: 79%;
-    margin-right: 2cm;
-    
+    margin-left: 0.1cm;
+   
   }
   #inputCantidad{
     width: 79%;
     margin-left:2cm;
     margin-top:0.2cm;
+    margin: auto;
+    margin-right:  0.1cm; ;
   }
   
   .my-class{
-    margin-left: 2.4cm;
+    margin-left: 2.3cm;
+    margin-bottom: 0.2cm;
+    
+    
     
   }
  
   #inputState{
-    width: 79%;  
+    width: 79%; 
+    margin: auto; 
+    margin-left: 0.1cm;
   }
 
   #inputTotalAPagar{
     width: 81%;
     margin-left: 2cm;
+    margin: auto;
 
   } 
   
-  .my-pago{
-    margin-left: 2.4cm;
+ .my-pago{
+  margin-left:2.2cm;
 
+  
+    
   }
 
 
@@ -244,18 +261,29 @@ width:75%;
 
 
 }
-#myButton{
-justify-content: center;
 
-}
+
+#myButton{
+  justify-content: center;
+  gap:0.4cm;
+  width: 99%;
+  flex-wrap: wrap;
+  margin-bottom: 2cm;
+  display:flex;
+  
+  
+  }
 #borrarButton{
-width: 77%;
+width: 79%;
 margin-left: 2cm;
+
 
 }
 
 #resumenButton{
   width: 79%;
+  padding-left: 0px;
+ 
 
 }
 
@@ -304,7 +332,7 @@ color: gray;
  
 footer{
   background: linear-gradient(to right, var(--colorfooter), var(--colordegradado));
- margin-top: 0;
+ margin-top: auto;
  padding-top: 0;
   min-height: 80px;
   
@@ -372,8 +400,11 @@ flex-wrap: wrap ;
 #inputEmail1{
 width: 72%;
 justify-content: center;
-margin-left: 3.3cm;
-margin-right: 3cm;
+/*margin-left: 3.3cm;
+margin-right: 3cm;*/
+display: flex;
+margin:auto;
+
 }
 
 #inputTotalAPagar{
@@ -381,19 +412,79 @@ margin-right: 3cm;
   height: 40px;
 }
 
-.container {
+.my-container {
+  margin-right: 1px;
   display: flex;
   justify-content: center;
 }
 
-#myButton{
-gap:7px;
-width: 99%;
 
-}
+
+
  
 .datos{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
 }
 
 
+
+
+
+@media screen and (max-width: 768px) {
+  .datos {
+    flex-direction: column;
+     
+    }
+  }
+
+  @media screen and (max-width:700px){
+
+    .my-pago{
+  text-align: center;
+  margin-left: 0.5cm;
+    
+    }
+  }
+
+  @media screen and (max-width:700px){
+
+    .my-class{
+  text-align: center;
+  margin-left: 0.3cm;
+    
+    }
+  }
+
+  @media screen and (max-width:700px){
+
+    #myButton{
+  flex-direction: column;
+  justify-content: center ;
+  
+    
+    }
+  }
+
+  @media screen and (max-width:700px){
+
+    #borrarButton{
+  margin:0.8cm;
+  margin-bottom: 0.1cm;
+  margin-top: 0.5cm;
+  
+    }
+  }
+
+  @media screen and (max-width:700px){
+
+    #resumenButton{
+    
+    margin:0.8cm;
+    margin-top: 0.1cm;
+   
+    
+    }
+  }
