@@ -9,6 +9,12 @@
 --colorbtn:rgb(136, 204, 0) ;
 --colorfooter: rgb(0, 51, 77);
 --colordegradado:rgb(0, 85, 128);
+--colortarjP:rgb(0, 102, 255);
+--colortarjS:rgb(0, 204, 153);
+--colortarjT:rgb(255, 255, 102);
+--colorpagar:rgb(179, 218, 255) ;
+--colorBresumen:rgb(136, 204, 0);
+
 }
 
 *{
@@ -194,18 +200,71 @@ margin-top: -30px;
  span{
     text-decoration: underline dotted;
   }
-  #inputNombre {
-    width: 75%;
+  #inputNombre2 {
+    width: 79%;
+    margin-left: 2cm;
    
-  
   }
 
-  #inputApellido {
-    width: 75%;
-  
+  #inputApellido2 {
+    width: 79%;
+    margin-right: 2cm;
+    
   }
+  #inputCantidad{
+    width: 79%;
+    margin-left:2cm;
+    margin-top:0.2cm;
+  }
+  
+  .my-class{
+    margin-left: 2.4cm;
+    
+  }
+ 
+  #inputState{
+    width: 79%;  
+  }
+
+  #inputTotalAPagar{
+    width: 81%;
+    margin-left: 2cm;
+
+  } 
+  
+  .my-pago{
+    margin-left: 2.4cm;
+
+  }
+
+
+
+#inputNombre{
+width:75%;
+
+
+}
+#myButton{
+justify-content: center;
+
+}
+#borrarButton{
+width: 77%;
+margin-left: 2cm;
+
+}
+
+#resumenButton{
+  width: 79%;
+
+}
+
+#inputApellido{
+width: 75%;
+
+}
   textarea{
-height: 70px;
+    height: 75%px;
 
   }
   
@@ -239,7 +298,7 @@ color: gray;
 
   form{
     flex-direction: row;
-  
+    
   }
 }
  
@@ -252,9 +311,6 @@ footer{
 }
 .footer-link {
   display: inline-block;
- /* text-align: center;
-  margin-bottom: 10px;
-  word-wrap: break-word;*/
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -264,10 +320,80 @@ footer{
   text-decoration: none;
   color:var(--colorenlace);
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
 .col {
-
     text-align: center;
-flex-direction:row;
+    flex-direction:row;
   }
 }
+
+.container2{
+gap: 12px;
+flex-wrap: wrap ;
+
+}
+.pagina2 h6  {
+  margin-top: 20px;
+  color:black;
+
+} 
+ 
+.pagina2 h5{
+   margin-top: 20px;
+}
+
+.pagina2 p{
+  margin-top: 20px;
+  color:black;
+}
+
+
+.blue-border{
+  border:1.5px solid var(--colortarjP);
+  text-align: center;
+
+}
+ .green-border{
+  border: 1.5px solid var(--colortarjS);
+  text-align: center;
+ }
+ 
+ .yellow-border{
+  border: 1.5px solid var(--colortarjT);
+  text-align: center ;
+
+ }
+
+ .titulos h5, .titulos h2{
+  text-align: center;
+  margin-top: 20px;
+}
+
+#inputEmail1{
+width: 72%;
+justify-content: center;
+margin-left: 3.3cm;
+margin-right: 3cm;
+}
+
+#inputTotalAPagar{
+  background-color:var(--colorpagar);
+  height: 40px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+#myButton{
+gap:7px;
+width: 99%;
+
+}
+ 
+.datos{
+  justify-content: center;
+}
+
+
